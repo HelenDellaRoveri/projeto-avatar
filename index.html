@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Avatar Maker Expandido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Monte seu Avatar! 👤</h1>
+
+    <div id="conteudo">
+        <div id="avatar">
+            <div class="cabeca skin1"></div>
+            <div id="face" class="emoji-inner">😐</div>
+            <div class="corpo skin1"></div>
+            <div class="roupa tshirt cor1"></div>
+            <div class="pernas skin1"></div>
+        </div>
+
+        <div class="painel">
+        <h3>Expressão:</h3>
+        <button onclick="mudarExpressao('😄')">Feliz</button>
+        <button onclick="mudarExpressao('😎')">Estiloso</button>
+        <button onclick="mudarExpressao('😡')">Bravo</button>
+
+        <h3>Cor da roupa:</h3>
+        <button onclick="mudarRoupa('cor1')">Azul</button>
+        <button onclick="mudarRoupa('cor2')">Verde</button>
+        <button onclick="mudarRoupa('cor3')">Rosa</button>
+
+        <h3>Tipo de Roupa:</h3>
+        <button onclick="mudarTipoRoupa('tshirt')">Camiseta</button>
+        <button onclick="mudarTipoRoupa('hoodie')">Moletom</button>
+        <button onclick="mudarTipoRoupa('dress')">Vestido</button>
+
+        <h3>Cor da Pele:</h3>
+        <button onclick="mudarPele('skin1')">Clara</button>
+        <button onclick="mudarPele('skin2')">Média</button>
+        <button onclick="mudarPele('skin3')">Escura</button>
+
+        <br><br>
+        <button onclick="salvarAvatar()">💾 Salvar Avatar</button>
+        <button onclick="resetarAvatar()">🧹 Resetar</button>
+
+        <br><br>
+        <button onclick="tocarMusica()">🎵 Play/Pause Música</button>
+        </div>
+    </div>
+        
+    <audio id="musica" src="./musica.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
